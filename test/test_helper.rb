@@ -5,6 +5,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 require 'pp'
 require 'test/unit'
 require 'ruby_kml'
+require 'pry'
 
 class Test::Unit::TestCase
 
