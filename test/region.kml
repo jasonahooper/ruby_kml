@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Region id="0">
+    <LatLonAltBox>
+      <north>-90</north>
+      <south>90</south>
+      <east>-180</east>
+      <west>180</west>
+      <maxAltitude>clampToGround</maxAltitude>
+    </LatLonAltBox>
+    <Lod>
+      <minLodPixels>180</minLodPixels>
+      <maxLodPixels>-1</maxLodPixels>
+    </Lod>
+  </Region>
+</kml>

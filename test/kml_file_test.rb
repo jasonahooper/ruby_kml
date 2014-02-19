@@ -13,6 +13,24 @@ class KMLFileTest < Test::Unit::TestCase
     assert_equal File.read('test/simple_placemark.kml'), kml.render
   end
 
+  def test_region
+    kml = KMLFile.new
+    kml.objects << Region.new(
+      :id => '0',
+      :lat_lon_alt_box => LatLonAltBox.new(
+        :north => -90,
+        :south => 90,
+        :east => -180,
+        :west => 180
+      ),
+      :lod => Lod.new(
+        :min_lod_pixels => 180,
+        :max_lod_pixels => -1
+      )
+    )
+    assert_equal File.read('test/region.kml'), kml.render
+  end
+
   def test_cdata_description
     description = <<-DESC
 <h1>CDATA Tags are useful!</h1>

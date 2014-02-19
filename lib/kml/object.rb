@@ -3,7 +3,7 @@ module KML #:nodoc:
   class Object
     # The KML object ID
     attr_accessor :id
-    
+
     # Initialize the object, optionally passing a Hash of attributes to set.
     def initialize(attributes=nil)
       if attributes
@@ -27,3 +27,6 @@ require 'kml/style_selector'
 require 'kml/link'
 require 'kml/icon'
 require 'kml/lat_lon_box'
+require 'kml/lat_lon_alt_box'
+require 'kml/region'
+require 'kml/lod'
