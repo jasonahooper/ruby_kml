@@ -8,7 +8,8 @@ class KMLFileTest < Test::Unit::TestCase
     kml.objects << Placemark.new(
       :name => 'Simple placemark',
       :description => 'Attached to the ground. Intelligently places itself at the height of the underlying terrain.',
-      :geometry => Point.new(:coordinates=>'-122.0822035425683,37.42228990140251,0')
+      :geometry => Point.new(:coordinates=>'-122.0822035425683,37.42228990140251,0'),
+      :region => '0'
     )
     assert_equal File.read('test/simple_placemark.kml'), kml.render
   end
