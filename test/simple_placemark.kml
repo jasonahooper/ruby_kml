@@ -2,6 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.1">
   <Placemark>
     <name>Simple placemark</name>
+    <region>0</region>
     <description>
       <![CDATA[Attached to the ground. Intelligently places itself at the height of the underlying terrain.]]>
     </description>
